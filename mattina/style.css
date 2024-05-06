@@ -1,0 +1,23 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    padding: 20px;
+    border: 2px solid red;
+    background-color: green;
+
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    color: rgba(49, 118, 159, 0.253);
+}
+
+span {
+    color:red;
+}

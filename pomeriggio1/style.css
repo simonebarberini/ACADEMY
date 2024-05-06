@@ -1,0 +1,40 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: red;
+}
+
+.text {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    /* border: 2px solid rgb(9, 148, 194); */
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid green;
+    height: 450px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid green;
+    height: 450px;
+}
+
+
