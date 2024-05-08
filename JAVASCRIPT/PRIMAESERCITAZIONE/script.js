@@ -4,7 +4,7 @@ function verificaCredenziali(nomeUtente, password) {
             return true;
         }
     }
-    return false; 
+    return false;
 }
 
 function getUtente(username){
@@ -22,8 +22,10 @@ function accedi(){
     if (verificaCredenziali(username, password)){
         utenteLoggato = getUtente(username);
         alert("Accesso consentito, Benvenuto "+utenteLoggato.username);
+        return operazioni(utenteLoggato);
+    }else{
+        return alert("Credenziali errate");
     }
-    return operazioni(utenteLoggato);
 }
 
 function operazioni(utenteLoggato){
@@ -60,7 +62,9 @@ function bonifico(utenteLoggato){
     let ibanDestinatario = prompt("Inserire iban destinatario");
     let utenteDestinatario = getUtenteIban(ibanDestinatario);
     let importo = prompt("Inserisci importo: ");
-    if(importo>utenteLoggato.saldo){
+    if(utenteLoggato.username === utenteDestinatario.username){
+        alert("Non puoi fare un bonifico a te stesso");
+    }else if(importo>utenteLoggato.saldo){
         alert("Importo superiore al saldo");
     }else{
         importo = parseFloat(importo);
