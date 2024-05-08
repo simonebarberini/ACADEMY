@@ -71,7 +71,23 @@ function bonifico(utenteLoggato){
     alert(utenteDestinatario.saldo);
 }
 
+function prelievo(utenteLoggato){
+    let importo = prompt("Inserisci l'importo da prelevare: ");
+    importo = parseFloat(importo);
+    if(utenteLoggato.saldo < importo){
+        alert("Impossibile prelevare saldo inferiore alla somma da prelevare");
+    }else{
+        utenteLoggato.saldo -= importo;
+        alert("Saldo rimanente: "+ utenteLoggato.saldo);
+    }
+}
 
+function deposito(utenteLoggato){
+    importo = prompt("Inserisci l'importo da depositare: ");
+    importo = parseFloat(importo);
+    utenteLoggato.saldo += importo;
+    alert("Il tuo saldo attuale é: "+ utenteLoggato.saldo);
+}
 
 let utenti = [
     utente1 = {
