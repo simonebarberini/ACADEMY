@@ -29,7 +29,7 @@ function accedi(){
 }
 
 function operazioni(utenteLoggato){
-    let menuOperazioni = prompt("Inserisci (1) per bonifico, (2) per deposito + (3) per prelievo");
+    let menuOperazioni = prompt("Inserisci (1) per bonifico, (2) per deposito (3) per prelievo");
     switch (menuOperazioni) {
         case "1":
             bonifico(utenteLoggato);
