@@ -1,0 +1,70 @@
+.container {
+    border: 2px solid red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: 2px solid black;
+    height: 450px;
+    width: 450px;
+    text-align: left;
+}
+
+.welcome-message{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.ingredients{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.left-sub, .right-sub{
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.checkout-button{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottoni{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.coupon{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.carrello{
+    margin-top: 50px;
+}
+
+li{
+    margin-top: 10px;
+}

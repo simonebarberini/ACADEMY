@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ham Totem</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <div class="welcome-message">
+                Benvenuto, Simone Barberini
+            </div>
+            <div class="ingredients">
+                <div class="left-sub">
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="5"> Pane &ensp;5$
+                        </li>
+                        <li>
+                            <input type="checkbox" value="4"> Pomodoro &ensp; 4$
+                        </li>
+                        <li>
+                            <input type="checkbox" value="3"> Insalata &ensp; 3$
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-sub">
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="1"> Provola &ensp; 1$
+                        </li>
+                        <li>
+                            <input type="checkbox" value="6"> Melanzane &ensp; 6$
+                        </li>
+                        <li>
+                            <input type="checkbox" value="2"> Pulled Pork &ensp; 2$
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coupon">
+                <div>
+                    Inserisci codice sconto
+                </div>
+                <input type="text" id="coupon">
+            </div>
+            <div class="bottoni">
+                <div class="botton">
+                    <div class="checkout-button" id="checkout">Checkout</div>
+                </div>
+                <div class="button">
+                    <div class="checkout-button" id="reset">Reset</div>
+                </div>
+            </div>
+            <div class="carrello">
+                <ul>
+                    <li>
+                        Prezzo Totale &ensp; <span id="totale"></span>
+                    </li>
+                    <li>
+                        Sconto &ensp; <span id="sconto"></span>
+                    </li>
+                    <li>
+                        Prezzo Finale &ensp; <span id="finale"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="messaggio"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
