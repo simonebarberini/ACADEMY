@@ -1,10 +1,12 @@
 .container {
-    border: 2px solid red;
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("assets/sfondoham.jpeg");
+    font-family:fantasy;
 }
 .sub-container {
     display: flex;
@@ -14,6 +16,9 @@
     height: 450px;
     width: 450px;
     text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .welcome-message{
@@ -22,14 +27,12 @@
 }
 
 .ingredients{
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 .left-sub, .right-sub{
-    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -41,13 +44,14 @@ ul{
 }
 
 .checkout-button{
-    background-color: blue;
-    color: white;
+    background-color: rgb(247, 179, 76);
+    color: black;
     width: 100px;
     height: 40px;
     display: flex ;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .bottoni{
@@ -57,14 +61,26 @@ ul{
 }
 
 .coupon{
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 10px;
 }
 
 .carrello{
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 li{
     margin-top: 10px;
+}
+
+h1{
+    background-color: rgb(247, 179, 76);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.welcome-message{
+    font-weight: bolder;
+    font-size: 20px;
+
 }
