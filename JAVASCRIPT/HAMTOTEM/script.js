@@ -45,6 +45,7 @@ reset.addEventListener("click", function(){
     if(coupon.value != ""){
         coupon.value = "";
     }
+    prezzo = 1;
     totale.innerText = "";
     sconto.innerText = "";
     finale.innerText = "";
