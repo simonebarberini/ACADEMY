@@ -61,12 +61,11 @@ ul{
 }
 
 .coupon{
-    margin-top: 20px;
-    margin-left: 10px;
+    margin: 10px auto;
 }
 
 .carrello{
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 li{
