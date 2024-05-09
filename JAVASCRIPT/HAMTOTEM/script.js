@@ -14,7 +14,7 @@ let prezzo = 1;
 
 benvenuto();
 
-
+//controlla se un ingrediente é stato selezionato e ne somma il prezzo
 checkboxes.forEach(function (checkbox) {
     checkbox.addEventListener("click", function () {
             if (checkbox.checked) {
@@ -25,7 +25,8 @@ checkboxes.forEach(function (checkbox) {
 
 });
 
-
+//quando viene premuto il tasto checkout stampa i prezzi e calcola lo sconto se
+//é stato inserito il codice sconto corretto
 checkout.addEventListener("click", function(){
     // Stampo e Rimuovo la virgola dall'ultimo elemento
     let scontoCalcolato = 0;
@@ -38,7 +39,8 @@ checkout.addEventListener("click", function(){
 })
 
 
-
+//al click del tasto reset vengono azzerati tutti i campi dei prezzi 
+//e deselezionate le checkbox
 reset.addEventListener("click", function(){
     if(coupon.value != ""){
         coupon.value = "";
